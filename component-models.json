@@ -138,8 +138,10 @@
             "value": "highlight"
           }
         ]
-      },
-      "components": [
+      }
+     
+    ],
+     "components": [
     "text",
     "image",
     "button",
@@ -148,7 +150,6 @@
     "cards",
     "columns"
    ]
-    ]
   },
   {
     "id": "card",
