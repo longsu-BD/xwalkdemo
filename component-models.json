@@ -187,10 +187,7 @@
         "value": "",
         "label": "Rows"
       }
-    ],
-    "components": [
-      "column"
-   ]
+    ]
   },
   {
     "id": "fragment",
