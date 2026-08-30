@@ -12,13 +12,14 @@ import {
 import {
   loadSections,
 } from '../../scripts/aem.js';
-
+var mypath;
 /**
  * Loads a fragment.
  * @param {string} path The path to the fragment
  * @returns {HTMLElement} The root element of the fragment
  */
 export async function loadFragment(path) {
+  mypath=path;
   if (path && path.startsWith('/') && !path.startsWith('//')) {
     // eslint-disable-next-line no-param-reassign
     path = path.replace(/(\.plain)?\.html/, '');
@@ -46,9 +47,10 @@ export async function loadFragment(path) {
 
 export default async function decorate(block) {
   console.log('[Fragment] Starting decoration');
+   console.log('[Fragment] mypath='+mypath);
   const link = block.querySelector('a');
   const path = link ? link.getAttribute('href') : block.textContent.trim();
   const fragment = await loadFragment(path);
   if (fragment) block.replaceChildren(...fragment.childNodes);
-  console.log('[Fragment] Starting decoration');
+  console.log('[Fragment] Ending decoration');
 }
