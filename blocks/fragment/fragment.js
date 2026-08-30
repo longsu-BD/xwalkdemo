@@ -19,10 +19,11 @@ var mypath;
  * @returns {HTMLElement} The root element of the fragment
  */
 export async function loadFragment(path) {
-  mypath=path;
+
   if (path && path.startsWith('/') && !path.startsWith('//')) {
     // eslint-disable-next-line no-param-reassign
     path = path.replace(/(\.plain)?\.html/, '');
+      mypath=path;
     const resp = await fetch(`${path}.plain.html`);
     if (resp.ok) {
       const main = document.createElement('main');
