@@ -45,8 +45,10 @@ export async function loadFragment(path) {
 }
 
 export default async function decorate(block) {
+  console.log('[Fragment] Starting decoration');
   const link = block.querySelector('a');
   const path = link ? link.getAttribute('href') : block.textContent.trim();
   const fragment = await loadFragment(path);
   if (fragment) block.replaceChildren(...fragment.childNodes);
+  console.log('[Fragment] Starting decoration');
 }
