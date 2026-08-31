@@ -58,6 +58,7 @@ export default async function decorate(block) {
   if (text) {
     console.log('[Fragment] Text decoration');
     text.classList.add('hero-text');
+     console.log('[Fragment] text='+text);
   }
    console.log('[Fragment] mypath='+mypath);
   const link = block.querySelector('a');
