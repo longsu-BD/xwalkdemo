@@ -47,7 +47,18 @@ export async function loadFragment(path) {
 }
 
 export default async function decorate(block) {
-  console.log('[Fragment] Starting decoration');
+  console.log('[Fragment] Starting decoration 2');
+    const heading = block.querySelector('h1');
+  const text = block.querySelector('p');
+  if (heading) {
+    console.log('[Fragment] Heading decoration');
+    heading.classList.add('hero-title');
+  }
+
+  if (text) {
+    console.log('[Fragment] Text decoration');
+    text.classList.add('hero-text');
+  }
    console.log('[Fragment] mypath='+mypath);
   const link = block.querySelector('a');
   const path = link ? link.getAttribute('href') : block.textContent.trim();
