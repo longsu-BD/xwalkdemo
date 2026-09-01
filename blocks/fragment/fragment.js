@@ -12,18 +12,16 @@ import {
 import {
   loadSections,
 } from '../../scripts/aem.js';
-var mypath;
+
 /**
  * Loads a fragment.
  * @param {string} path The path to the fragment
  * @returns {HTMLElement} The root element of the fragment
  */
 export async function loadFragment(path) {
-
   if (path && path.startsWith('/') && !path.startsWith('//')) {
     // eslint-disable-next-line no-param-reassign
     path = path.replace(/(\.plain)?\.html/, '');
-      mypath=path;
     const resp = await fetch(`${path}.plain.html`);
     if (resp.ok) {
       const main = document.createElement('main');
@@ -47,23 +45,8 @@ export async function loadFragment(path) {
 }
 
 export default async function decorate(block) {
-  console.log('[Fragment] Starting decoration 2');
-    const heading = block.querySelector('h1');
-  const text = block.querySelector('p');
-  if (heading) {
-    console.log('[Fragment] Heading decoration');
-    heading.classList.add('hero-title');
-  }
-
-  if (text) {
-    console.log('[Fragment] Text decoration');
-    text.classList.add('hero-text');
-     console.log('[Fragment] text='+text);
-  }
-   console.log('[Fragment] mypath='+mypath);
   const link = block.querySelector('a');
   const path = link ? link.getAttribute('href') : block.textContent.trim();
   const fragment = await loadFragment(path);
   if (fragment) block.replaceChildren(...fragment.childNodes);
-  console.log('[Fragment] Ending decoration');
 }
