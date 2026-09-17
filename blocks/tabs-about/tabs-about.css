@@ -72,6 +72,14 @@
   display: none;
 }
 
+/* Panel body is wrapped in a blockquote (required so md2jcr maps the whole
+   panel to the content_richtext field); neutralize default blockquote chrome. */
+.tabs-about .tabs-about-panel blockquote {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 @media (width >= 900px) {
   .tabs-about .tabs-about-list button {
     min-height: 72px;
