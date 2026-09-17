@@ -1,0 +1,30 @@
+/* BD (bd.com) brand tokens — extracted from https://www.bd.com/en-us/about-bd/ */
+:root {
+  /* Fonts — BD uses custom @font-face aliases with no public source; fall back to system sans-serif */
+  --heading-font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  --body-font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+
+  /* Colors */
+  --background-color: rgb(255 255 255);
+  --text-color: rgb(6 10 61);
+  --link-color: rgb(4 78 215);
+  --link-hover-color: rgb(10 88 202);
+  --light-color: rgb(244 244 246);
+  --dark-color: rgb(6 10 61);
+  --brand-navy: rgb(6 10 61);
+  --brand-blue: rgb(4 78 215);
+  --brand-accent: rgb(237 111 45);
+
+  /* Spacing */
+  --section-padding: 40px;
+  --content-max-width: 1200px;
+  --nav-height: 72px;
+
+  /* Heading sizes (desktop) */
+  --heading-size-xxl: 44px;
+  --heading-size-xl: 32px;
+  --heading-size-l: 24px;
+  --heading-size-m: 20px;
+  --heading-size-s: 18px;
+  --heading-size-xs: 16px;
+}

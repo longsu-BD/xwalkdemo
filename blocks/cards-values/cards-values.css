@@ -1,0 +1,36 @@
+/* cards-values — structural/layout only; brand colors & typography applied by design pass */
+
+.cards-values > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.cards-values > ul > li {
+  border-top: 2px solid;
+  padding-top: 16px;
+}
+
+.cards-values .cards-values-icon {
+  line-height: 0;
+  margin-bottom: 16px;
+}
+
+.cards-values .cards-values-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.cards-values .cards-values-body p {
+  margin: 0;
+}
+
+@media (width >= 600px) {
+  .cards-values > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

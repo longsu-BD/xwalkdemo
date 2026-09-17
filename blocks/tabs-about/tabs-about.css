@@ -1,0 +1,85 @@
+/* tabs-about — BD "Our Company" horizontal tab bar
+ * Values extracted from source computed styles (.bd-tabs .cmp-tabs__tablist / __tab).
+ * Tab bar: grey rgb(239 239 239) strip; active tab is white with a 4px orange top border.
+ */
+
+/* ---- Tab bar (tablist) ---- */
+.tabs-about .tabs-about-list {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(239 239 239);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tabs-about .tabs-about-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---- Tab buttons ---- */
+.tabs-about .tabs-about-list button {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  min-height: 56px;
+  margin: 0;
+  border: none;
+  border-top: 4px solid transparent;
+  border-radius: 0;
+  padding: 8px 20px;
+  background-color: transparent;
+  color: rgb(6 10 61);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.tabs-about .tabs-about-list button p {
+  margin: 0;
+}
+
+.tabs-about .tabs-about-list button:hover {
+  color: var(--link-color);
+}
+
+/* active tab — white panel with orange top accent */
+.tabs-about .tabs-about-list button[aria-selected='true'] {
+  border-top-color: rgb(255 110 0);
+  background-color: var(--background-color);
+  color: rgb(6 10 61);
+  font-weight: 700;
+  cursor: default;
+}
+
+/* ---- Tab panels ---- */
+.tabs-about .tabs-about-panel {
+  margin: 0;
+  padding: 24px 0 0;
+  background-color: var(--background-color);
+}
+
+.tabs-about .tabs-about-panel[aria-hidden='true'] {
+  display: none;
+}
+
+@media (width >= 900px) {
+  .tabs-about .tabs-about-list button {
+    min-height: 72px;
+    padding: 12px 20px;
+    font-size: var(--body-font-size-m);
+  }
+
+  .tabs-about .tabs-about-panel {
+    padding-top: 32px;
+  }
+}

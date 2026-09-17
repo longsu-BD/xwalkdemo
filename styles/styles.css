@@ -10,34 +10,36 @@
  * governing permissions and limitations under the License.
  */
 
-:root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+@import url('brand.css');
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+:root {
+  /* colors — BD brand (overrides in brand.css) */
+  --background-color: rgb(255 255 255);
+  --light-color: rgb(244 244 246);
+  --dark-color: rgb(6 10 61);
+  --text-color: rgb(6 10 61);
+  --link-color: rgb(4 78 215);
+  --link-hover-color: rgb(10 88 202);
+
+  /* fonts — BD custom aliases fall back to system sans-serif (see brand.css) */
+  --body-font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  --heading-font-family: "Helvetica Neue", helvetica, arial, sans-serif;
 
   /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  --body-font-size-m: 18px;
+  --body-font-size-s: 16px;
+  --body-font-size-xs: 14px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  --heading-font-size-xxl: 44px;
+  --heading-font-size-xl: 32px;
+  --heading-font-size-l: 24px;
+  --heading-font-size-m: 20px;
+  --heading-font-size-s: 18px;
+  --heading-font-size-xs: 16px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 72px;
 }
 
 /* fallback fonts */
@@ -61,12 +63,12 @@
     --body-font-size-xs: 14px;
 
     /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
+    --heading-font-size-xxl: 44px;
+    --heading-font-size-xl: 32px;
+    --heading-font-size-l: 24px;
+    --heading-font-size-m: 20px;
+    --heading-font-size-s: 18px;
+    --heading-font-size-xs: 16px;
   }
 }
 
@@ -276,6 +278,24 @@ button.button.accent:disabled:focus-visible {
   background-color: var(--light-color);
   border-color: var(--light-color);
   color: var(--dark-color);
+}
+
+/* BD: default (unclassed) links render as plain underlined links, not pill buttons */
+main .button-container {
+  display: inline;
+}
+
+main a.button:any-link:not(.primary, .secondary, .accent) {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  background: none;
+  color: var(--link-color);
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: underline;
+  white-space: normal;
 }
 
 main img {
