@@ -1,0 +1,187 @@
+/* carousel-honors — BD multi-card text carousel (Recent Transactions / Timeline).
+   Source: .bd-custom-carousel — plain text cards on white, compact controls top-right.
+   Values from getComputedStyle of source (migration-work/carousel-honors-extracted.css). */
+
+.carousel-honors {
+  position: relative;
+
+  /* room for the top-right control bar (prev / dots / next) */
+  padding-top: 52px;
+}
+
+.carousel-honors .carousel-honors-slides-container {
+  position: static;
+}
+
+.carousel-honors .carousel-honors-slides,
+.carousel-honors .carousel-honors-slide-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* horizontal, snapping row of fixed-width cards */
+.carousel-honors .carousel-honors-slides {
+  display: flex;
+  column-gap: 32px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow: scroll clip;
+}
+
+.carousel-honors .carousel-honors-slides::-webkit-scrollbar {
+  display: none;
+}
+
+/* each slide is a plain text card on white */
+.carousel-honors .carousel-honors-slide {
+  flex: 0 0 82%;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  min-height: 0;
+}
+
+/* first cell of every row is an (empty) image slot — collapse it */
+.carousel-honors .carousel-honors-slide .carousel-honors-slide-image {
+  display: none;
+}
+
+.carousel-honors .carousel-honors-slide .carousel-honors-slide-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* card text: title + date (14px / 600 / BD navy) */
+.carousel-honors .carousel-honors-slide-content p {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+/* "Learn more" link + its arrow icon share one line */
+.carousel-honors .carousel-honors-slide-content p:has(> a) {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  font-weight: 400;
+}
+
+.carousel-honors .carousel-honors-slide-content p a:any-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.carousel-honors .carousel-honors-slide-content p a:hover {
+  text-decoration: underline;
+}
+
+.carousel-honors .carousel-honors-slide-content p a img {
+  width: 16px;
+  height: 16px;
+}
+
+/* ---- top-right control bar --------------------------------------------- */
+
+/* dot indicators sit to the left of the arrows */
+.carousel-honors .carousel-honors-slide-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px 10px;
+  line-height: 0;
+}
+
+.carousel-honors nav[aria-label] {
+  position: absolute;
+  top: 12px;
+  right: 76px;
+  left: auto;
+  max-width: 60%;
+}
+
+.carousel-honors .carousel-honors-slide-indicator button {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgb(197 197 197);
+  transition: background-color 0.2s;
+}
+
+.carousel-honors .carousel-honors-slide-indicator button:disabled,
+.carousel-honors .carousel-honors-slide-indicator button:hover,
+.carousel-honors .carousel-honors-slide-indicator button:focus-visible {
+  background-color: var(--text-color);
+}
+
+/* prev / next chevrons — compact, no circle, top-right */
+.carousel-honors .carousel-honors-navigation-buttons {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  left: auto;
+  transform: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 1;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.carousel-honors .carousel-honors-navigation-buttons button {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.carousel-honors .carousel-honors-navigation-buttons button::after {
+  display: block;
+  content: '';
+  border: 2px solid var(--text-color);
+  border-bottom: 0;
+  border-left: 0;
+  height: 9px;
+  width: 9px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 2px);
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.carousel-honors .carousel-honors-navigation-buttons button.slide-next::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+  left: calc(50% - 2px);
+}
+
+.carousel-honors .carousel-honors-navigation-buttons button:hover::after,
+.carousel-honors .carousel-honors-navigation-buttons button:focus-visible::after {
+  border-color: var(--link-color);
+}
+
+/* tablet / desktop: show multiple fixed-width cards */
+@media (width >= 600px) {
+  .carousel-honors .carousel-honors-slide {
+    flex: 0 0 281px;
+  }
+}

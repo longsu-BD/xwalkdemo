@@ -1,0 +1,66 @@
+/* accordion-history — structural/layout only; brand colors applied by design pass */
+
+.accordion-history details {
+  border: 1px solid #dadada;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.accordion-history details + details {
+  margin-top: 24px;
+}
+
+.accordion-history details p {
+  margin-bottom: 0.8em;
+}
+
+.accordion-history details summary {
+  position: relative;
+  padding: 0 46px 0 16px;
+  cursor: pointer;
+  list-style: none;
+  overflow: auto;
+  transition: background-color 0.2s;
+}
+
+.accordion-history details[open] summary {
+  background-color: var(--light-color);
+}
+
+.accordion-history details summary:focus,
+.accordion-history details summary:hover {
+  background-color: var(--light-color);
+}
+
+.accordion-history details summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-history details summary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%) rotate(135deg);
+  width: 6px;
+  height: 6px;
+  border: 2px solid;
+  border-width: 2px 2px 0 0;
+  transition: transform 0.2s;
+}
+
+.accordion-history details[open] summary::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.accordion-history details .accordion-history-item-body {
+  padding: 0 16px;
+}
+
+.accordion-history details:not([open]) .accordion-history-item-body {
+  display: none;
+}
+
+.accordion-history details[open] .accordion-history-item-body {
+  border-top: 1px solid #dadada;
+  background-color: var(--background-color);
+}

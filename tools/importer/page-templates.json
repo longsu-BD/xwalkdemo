@@ -1,0 +1,139 @@
+{
+  "templates": [
+    {
+      "name": "about-bd",
+      "urls": [
+        "https://www.bd.com/en-us/about-bd/ethics-compliance"
+      ],
+      "representativeUrl": "https://www.bd.com/en-us/about-bd/ethics-compliance",
+      "description": "To be named in naming step",
+      "blocks": [],
+      "urlPattern": "/en-us/about-bd/*"
+    },
+    {
+      "name": "about-bd-2",
+      "urls": [
+        "https://www.bd.com/en-us/about-bd/innovation-at-bd"
+      ],
+      "representativeUrl": "https://www.bd.com/en-us/about-bd/innovation-at-bd",
+      "description": "To be named in naming step",
+      "blocks": [],
+      "urlPattern": "/en-us/about-bd/*"
+    },
+    {
+      "name": "about-bd-3",
+      "urls": [
+        "https://www.bd.com/en-us/about-bd/our-company",
+        "https://www.bd.com/en-us/about-bd/quality-at-bd",
+        "https://www.bd.com/en-us/about-bd/recent-mergers-and-acquisitions"
+      ],
+      "representativeUrl": "https://www.bd.com/en-us/about-bd/our-company",
+      "description": "About BD section landing page: full-bleed spotlight hero over a tabbed content navigator (About BD / Segments / Leadership / Board of Directors) containing values cards, a history accordion, an honors carousel, alternating segment media cards and profile grids.",
+      "blocks": [
+        {
+          "name": "hero-spotlight",
+          "instances": [
+            ".bd-spotlight-new"
+          ]
+        },
+        {
+          "name": "tabs-about",
+          "instances": [
+            ".bd-tabs"
+          ]
+        },
+        {
+          "name": "cards-values",
+          "instances": [
+            ".bd-value-list__container",
+            ".bd-values-mission-list"
+          ]
+        },
+        {
+          "name": "accordion-history",
+          "instances": [
+            ".accordion.panelcontainer",
+            ".bd-accordian-faq"
+          ]
+        },
+        {
+          "name": "carousel-honors",
+          "instances": [
+            ".bd-custom-carousel",
+            ".bd-carousel-outer-container"
+          ]
+        },
+        {
+          "name": "cards-segment",
+          "instances": [
+            ".consolidated-image-card"
+          ]
+        },
+        {
+          "name": "cards-profile",
+          "instances": [
+            ".bd-content-card-list"
+          ]
+        }
+      ],
+      "urlPattern": "/en-us/about-bd/*",
+      "sections": [
+        {
+          "id": "rc1",
+          "name": "hero",
+          "selector": [
+            ".bd-spotlight-new",
+            ".bd-spotlight__container"
+          ],
+          "style": null,
+          "blocks": [
+            "hero-spotlight"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc2",
+          "name": "tabbed-content",
+          "selector": [
+            ".bd-tabs",
+            ".bd-tabs.tabs.panelcontainer"
+          ],
+          "style": null,
+          "blocks": [
+            "tabs-about",
+            "cards-values",
+            "accordion-history",
+            "carousel-honors",
+            "cards-segment",
+            "cards-profile"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc3",
+          "name": "experience-fragment-chrome",
+          "selector": [
+            ".bd-experiencefragment",
+            ".experiencefragment"
+          ],
+          "style": null,
+          "blocks": [],
+          "defaultContent": []
+        }
+      ]
+    },
+    {
+      "name": "about-bd-4",
+      "urls": [
+        "https://www.bd.com/en-us/about-bd/patent-coverage"
+      ],
+      "representativeUrl": "https://www.bd.com/en-us/about-bd/patent-coverage",
+      "description": "To be named in naming step",
+      "blocks": [],
+      "urlPattern": "/en-us/about-bd/*"
+    }
+  ],
+  "metadata": {
+    "projectType": "xwalk"
+  }
+}

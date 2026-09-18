@@ -1,0 +1,10 @@
+{
+  "variantName": "accordion-history",
+  "baseBlock": "accordion",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "Decade-keyed expand/collapse timeline rows on a grey field, each with a plus/toggle affordance on the right. Rows collapse to a single summary line.",
+  "contentPattern": "Repeating rows; each row's first cell is the summary label (e.g. a decade) and the second cell is the collapsible body content.",
+  "usage": "'BD: A history of innovation' timeline inside the About BD tab on the about-bd-3 template pages.",
+  "options": [],
+  "memberVariantIds": ["accordion-history"]
+}

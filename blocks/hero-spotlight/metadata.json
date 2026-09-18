@@ -1,0 +1,10 @@
+{
+  "variantName": "hero-spotlight",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Full-bleed spotlight hero: an H1 sits in a foreground colored panel layered over a background photograph, with an orange corner accent. Approx 372px tall on desktop. No body copy or buttons.",
+  "contentPattern": "One background image plus a heading. Renders the heading in a foreground panel over the full-bleed background image.",
+  "usage": "Page-top spotlight/hero used across the about-bd-3 template pages (our-company, quality-at-bd, recent-mergers-and-acquisitions).",
+  "options": [],
+  "memberVariantIds": ["hero-spotlight"]
+}

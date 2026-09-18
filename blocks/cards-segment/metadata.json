@@ -1,0 +1,10 @@
+{
+  "variantName": "cards-segment",
+  "baseBlock": "cards",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "A vertical stack of large media cards that alternate image-left / image-right; each card pairs a 4:3 image with a heading and detail paragraph.",
+  "contentPattern": "Repeating rows; each row has an image cell and a text cell (heading + detail copy). Image side alternates by row order.",
+  "usage": "'Segments' panel media cards inside the tabs on the about-bd-3 template pages.",
+  "options": [],
+  "memberVariantIds": ["cards-segment"]
+}

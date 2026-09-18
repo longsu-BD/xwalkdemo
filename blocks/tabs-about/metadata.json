@@ -1,0 +1,10 @@
+{
+  "variantName": "tabs-about",
+  "baseBlock": "tabs",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "Horizontal tab bar with an active-tab underline organizing several content panels (e.g. About BD / Segments / Leadership / Board of Directors). Only the active panel is visible.",
+  "contentPattern": "Repeating rows; each row's first cell is the tab title and the remaining cell is that tab's panel content.",
+  "usage": "Primary content navigator on the about-bd-3 template pages, grouping intro copy, values, history, honors, segments and leadership grids into tabs.",
+  "options": [],
+  "memberVariantIds": ["tabs-about"]
+}
