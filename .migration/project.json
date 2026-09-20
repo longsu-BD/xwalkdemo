@@ -1,0 +1,16 @@
+{
+  "type": "xwalk",
+  "sites": {
+    "xwalkdemo": {
+      "previewOrg": "longsu-bd",
+      "previewSite": "xwalkdemo",
+      "contentHostUrl": "author-p42012-e160093.adobeaemcloud.com",
+      "aemSitePath": "/content/xwalkdemo",
+      "aemAssetsFolderPath": "/content/dam/xwalkdemo",
+      "aemSiteName": "xwalkdemo",
+      "aemSiteTitle": "XWalk Demo",
+      "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
+      "botProtected": true
+    }
+  }
+}

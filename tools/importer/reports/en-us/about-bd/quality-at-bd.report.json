@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.bd.com/en-us/about-bd/quality-at-bd",
+  "path": "en-us/about-bd/quality-at-bd",
+  "timestamp": "2026-09-17T23:42:14.307Z",
+  "title": "Quality at BD",
+  "template": "about-bd-3",
+  "blocks": [
+    "hero-spotlight",
+    "tabs-about",
+    "accordion-history",
+    "accordion-history",
+    "cards-profile"
+  ]
+}
