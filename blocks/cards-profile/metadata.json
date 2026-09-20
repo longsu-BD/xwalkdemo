@@ -1,0 +1,10 @@
+{
+  "variantName": "cards-profile",
+  "baseBlock": "cards",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "A dense responsive grid of compact profile cards, each a square headshot thumbnail above a name link and optional title. 3-4 across on desktop.",
+  "contentPattern": "Repeating rows; each row has a headshot image cell and a name/link text cell.",
+  "usage": "Leadership and Board of Directors profile grids inside the tabs on the about-bd-3 template pages.",
+  "options": [],
+  "memberVariantIds": ["cards-profile"]
+}

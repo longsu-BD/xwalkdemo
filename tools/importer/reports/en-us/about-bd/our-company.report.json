@@ -1,0 +1,24 @@
+{
+  "status": "success",
+  "url": "https://www.bd.com/en-us/about-bd/our-company",
+  "path": "en-us/about-bd/our-company",
+  "timestamp": "2026-09-17T23:41:20.478Z",
+  "title": "Our Company | BD",
+  "template": "about-bd-3",
+  "blocks": [
+    "hero-spotlight",
+    "tabs-about",
+    "cards-values",
+    "cards-values",
+    "accordion-history",
+    "accordion-history",
+    "carousel-honors",
+    "carousel-honors",
+    "cards-segment",
+    "cards-segment",
+    "cards-segment",
+    "cards-segment",
+    "cards-profile",
+    "cards-profile"
+  ]
+}

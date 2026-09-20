@@ -1,0 +1,10 @@
+{
+  "variantName": "cards-values",
+  "baseBlock": "cards",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "Three compact value items across, each with an outlined icon above a short statement, separated by a top border rule. No card background or border box.",
+  "contentPattern": "Repeating rows; each row has an icon image cell and a short-statement text cell.",
+  "usage": "'Our Values' row inside the About BD tab on the about-bd-3 template pages.",
+  "options": [],
+  "memberVariantIds": ["cards-values"]
+}

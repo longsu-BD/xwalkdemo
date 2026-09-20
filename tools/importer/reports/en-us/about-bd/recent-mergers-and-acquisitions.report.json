@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.bd.com/en-us/about-bd/recent-mergers-and-acquisitions",
+  "path": "en-us/about-bd/recent-mergers-and-acquisitions",
+  "timestamp": "2026-09-17T23:43:06.309Z",
+  "title": "Recent Mergers and Acquisitions",
+  "template": "about-bd-3",
+  "blocks": [
+    "hero-spotlight",
+    "carousel-honors",
+    "carousel-honors",
+    "carousel-honors",
+    "carousel-honors"
+  ]
+}

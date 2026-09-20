@@ -1,0 +1,10 @@
+{
+  "variantName": "carousel-honors",
+  "baseBlock": "carousel",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "Multi-card recognition/awards carousel with left/right arrow controls and dot pagination. Cards show award titles; one slide visible at a time with horizontal scroll-snap.",
+  "contentPattern": "Repeating rows; each row is a slide with an optional image cell and a content cell (recognition title/text).",
+  "usage": "'Honors and Recognition' rotating strip inside the About BD tab on the about-bd-3 template pages.",
+  "options": [],
+  "memberVariantIds": ["carousel-honors"]
+}

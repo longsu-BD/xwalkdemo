@@ -83,6 +83,127 @@
       "id": "blocks",
       "components": [
         {
+          "title": "Accordion History",
+          "id": "accordion-history",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Accordion History",
+                  "filter": "accordion-history"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Accordion History Item",
+          "id": "accordion-history-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Accordion History Item",
+                  "model": "accordion-history-item",
+                  "summary": "2020s"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Profile",
+          "id": "cards-profile",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards Profile",
+                  "filter": "cards-profile"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Profile Item",
+          "id": "cards-profile-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Profile",
+                  "model": "cards-profile-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Segment",
+          "id": "cards-segment",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards Segment",
+                  "filter": "cards-segment"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Segment Item",
+          "id": "cards-segment-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Segment",
+                  "model": "cards-segment-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Values",
+          "id": "cards-values",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards Values",
+                  "filter": "cards-values"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Values Item",
+          "id": "cards-values-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Value",
+                  "model": "cards-values-item"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Cards",
           "id": "cards",
           "plugins": {
@@ -107,6 +228,36 @@
                 "template": {
                   "name": "Card",
                   "model": "card"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel Honors",
+          "id": "carousel-honors",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Carousel Honors",
+                  "filter": "carousel-honors"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel Honors Slide",
+          "id": "carousel-honors-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Carousel Honors Slide",
+                  "model": "carousel-honors-item"
                 }
               }
             }
@@ -143,6 +294,21 @@
           }
         },
         {
+          "title": "Hero Spotlight",
+          "id": "hero-spotlight",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Hero Spotlight",
+                  "model": "hero-spotlight"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Hero",
           "id": "hero",
           "plugins": {
@@ -152,6 +318,38 @@
                 "template": {
                   "name": "Hero",
                   "model": "hero"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Tabs About",
+          "id": "tabs-about",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Tabs About",
+                  "filter": "tabs-about"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Tabs About Item",
+          "id": "tabs-about-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Tab",
+                  "model": "tabs-about-item",
+                  "title": "Tab Name",
+                  "content_headingType": "h3"
                 }
               }
             }

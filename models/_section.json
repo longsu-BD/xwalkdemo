@@ -50,7 +50,14 @@
         "hero",
         "cards",
         "columns",
-        "fragment"
+        "fragment",
+        "hero-spotlight",
+        "tabs-about",
+        "accordion-history",
+        "carousel-honors",
+        "cards-values",
+        "cards-segment",
+        "cards-profile"
       ]
     }
   ]

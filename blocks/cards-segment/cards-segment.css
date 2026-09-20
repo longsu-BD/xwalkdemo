@@ -1,0 +1,43 @@
+/* cards-segment — structural/layout only; brand colors & typography applied by design pass */
+
+.cards-segment > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.cards-segment > ul > li {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.cards-segment .cards-segment-image {
+  line-height: 0;
+}
+
+.cards-segment .cards-segment-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.cards-segment .cards-segment-body > *:first-child {
+  margin-top: 0;
+}
+
+@media (width >= 600px) {
+  .cards-segment > ul > li {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  /* alternate: image on the right for odd rows */
+  .cards-segment > ul > li.cards-segment-reverse .cards-segment-image {
+    order: 2;
+  }
+}

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<workspaceFilter version="1.0">
+  <filter root="/content/xwalkdemo/en-us/about-bd/our-company"></filter>
+  <filter root="/content/xwalkdemo/en-us/about-bd/quality-at-bd"></filter>
+  <filter root="/content/xwalkdemo/en-us/about-bd/recent-mergers-and-acquisitions"></filter>
+</workspaceFilter>
