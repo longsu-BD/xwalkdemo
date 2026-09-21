@@ -354,6 +354,23 @@
               }
             }
           }
+        },
+        {
+          "title": "Long tem",
+          "id": "long-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "bd-com/components/text",
+                "template": {
+                  "name": "Tab",
+                  "model": "long-item",
+                  "title": "Long Item",
+                  "content_headingType": "h3"
+                }
+              }
+            }
+          }
         }
       ]
     }
