@@ -421,5 +421,17 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "long-test",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
   }
 ]

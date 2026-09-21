@@ -81,5 +81,11 @@
     "components": [
       "tabs-about-item"
     ]
+  },
+  {
+    "id": "long-test",
+    "components": [
+      "long-test"
+    ]
   }
 ]
