@@ -356,16 +356,16 @@
           }
         },
         {
-          "title": "Long tem",
-          "id": "long-item",
+          "title": "Long Test",
+          "id": "long-test",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "bd-com/components/text",
                 "template": {
                   "name": "Tab",
-                  "model": "long-item",
-                  "title": "Long Item",
+                  "model": "long-test",
+                  "title": "Long Test",
                   "content_headingType": "h3"
                 }
               }

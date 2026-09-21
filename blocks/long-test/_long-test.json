@@ -1,0 +1,34 @@
+{
+  "definitions": [
+    {
+      "title": "Long Test",
+      "id": "long-test",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "bd-com/components/text",
+            "template": {
+              "name": "Long Test",
+              "model": "long-test"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "long-test",
+      "fields": [
+        {
+          "component": "richtext",
+          "name": "text",
+          "value": "",
+          "label": "Text",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
