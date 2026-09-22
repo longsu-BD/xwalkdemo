@@ -356,6 +356,38 @@
           }
         }
       ]
+    },
+	{
+      "title":"General Components",
+      "id":"general",
+      "components":[
+        {
+          "title":"Long Test",
+          "id":"long-test",
+          "model": "text",
+          "filter": "texts",
+          "plugins":{
+            "aem":{
+              "page":{
+                "resourceType":"core/wcm/components/text/v2/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text"
+                }
+              }
+            },
+            "aem65":{
+              "page":{
+                "resourceType":"core/wcm/components/text/v2/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text"
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }
