@@ -354,34 +354,19 @@
               }
             }
           }
-        }
-      ]
-    },
-	{
-      "title":"General Components",
-      "id":"general",
-      "components":[
-        {
-          "title":"Long Test",
-          "id":"long-test",
-          "model": "text",
-          "filter": "texts",
-          "plugins":{
-            "aem":{
-              "page":{
-                "resourceType":"core/franklin/components/text/v1/text",
-                "template":{
-                  "text":"Default Text",
-                  "name":"Text"
-                }
-              }
-            },
-            "aem65":{
-              "page":{
-                "resourceType":"core/franklin/components/text/v1/text",
-                "template":{
-                  "text":"Default Text",
-                  "name":"Text"
+        },
+				{
+          "title": "Long Test",
+          "id": "long-test",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "bd-com/components/text",
+                "template": {
+                  "name": "Tab",
+                  "model": "long-test",
+                  "title": "Long Test",
+                  "content_headingType": "h3"
                 }
               }
             }
