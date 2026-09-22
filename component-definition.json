@@ -369,7 +369,7 @@
           "plugins":{
             "aem":{
               "page":{
-                "resourceType":"core/wcm/components/text/v2/text",
+                "resourceType":"core/franklin/components/text/v1/text",
                 "template":{
                   "text":"Default Text",
                   "name":"Text"
