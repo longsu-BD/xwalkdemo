@@ -24,6 +24,35 @@
           "component": "aem-content",
           "name": "reference",
           "label": "Reference"
+        },
+        {
+          "component": "select",
+          "name": "selector",
+          "label": "Selector Type",
+          "options": [
+            {
+              "name": "Product Type",
+              "value": "type"
+            },
+            {
+              "name": "Product Line",
+              "value": "line"
+            },
+            {
+              "name": "Product Category",
+              "value": "categpry"
+            },
+            {
+              "name": "Brand",
+              "value": "brand"
+            }
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "value",
+          "label": "Selector Value",
+          "value": ""
         }
       ]
     }
