@@ -468,5 +468,20 @@
         "valueType": "string"
       }
     ]
+  },
+    {
+    "id": "long-test2",
+   "fields": [
+      {
+        "component": "aem-experience-fragment",
+        "valueType": "string",
+        "name": "experience-fragment",
+        "label": "experience-fragment",
+        "variationName": "experienceFragmentVariation",
+        "validation": {
+            "rootPath": "/content/xwalkdemo"
+        }
+      }
+    ]
   }
 ]
