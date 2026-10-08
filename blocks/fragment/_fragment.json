@@ -27,8 +27,9 @@
         },
         {
           "component": "aem-tag"
-          "name": "namespace",
           "label": "Tag Namespace"
+          "name": "cq:tags",
+          "valueType": "string"
         }.
         {
           "component": "select",
