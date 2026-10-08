@@ -311,6 +311,13 @@
         "label": "Reference"
       },
         {
+          "component": "reference",
+          "valueType": "string",
+          "name": "namespace",
+          "label": "Tag Namespace",
+          "multi": false
+        },
+        {
           "component": "select",
           "name": "selector",
           "label": "Selector Type",
