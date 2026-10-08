@@ -365,8 +365,7 @@
                 "template": {
                   "name": "LongTest",
                   "model": "long-test",
-                  "title": "Long Test",
-                  "content_headingType": "h3"
+                  "title": "Long Test"
                 }
               }
             }
@@ -381,7 +380,7 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "LongTest2",
-                  "model": "long-test"
+                  "model": "long-test2"
                 }
               }
             }
