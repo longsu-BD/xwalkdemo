@@ -88,5 +88,10 @@
     "components": [
       "long-test"
     ]
+  },
+   {
+    "id": "long-test2",
+    "components": [
+    ]
   }
 ]
