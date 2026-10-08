@@ -311,11 +311,9 @@
         "label": "Reference"
       },
         {
-          "component": "reference",
-          "valueType": "string",
+          "component": "aem-tag"
           "name": "namespace",
-          "label": "Tag Namespace",
-          "multi": false
+          "label": "Tag Namespace"
         },
         {
           "component": "select",
