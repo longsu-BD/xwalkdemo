@@ -311,8 +311,8 @@
         "label": "Reference"
       },
         {
-          "component": "aem-tag"
-          "label": "Tag Namespace"
+          "component": "aem-tag",
+          "label": "Tag Namespace",
           "name": "cq:tags",
           "valueType": "string"
         },
