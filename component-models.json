@@ -479,7 +479,7 @@
         "label": "experience-fragment",
         "variationName": "experienceFragmentVariation",
         "validation": {
-            "rootPath": "/content/xwalkdemo"
+            "rootPath": "/content/experience-fragments/bd-com"
         }
       }
     ]
