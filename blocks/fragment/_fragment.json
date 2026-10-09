@@ -35,7 +35,7 @@
           "component": "text",
           "valueType": "string",
           "name": "value",
-          "label": "Selector Value",
+          "label": "Tag Title",
           "value": ""
         },
         {
