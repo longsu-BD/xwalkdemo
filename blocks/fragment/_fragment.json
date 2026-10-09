@@ -30,34 +30,19 @@
           "label": "Tag Namespace",
           "name": "cq:tags",
           "valueType": "string"
-        }.
-        {
-          "component": "select",
-          "name": "selector",
-          "label": "Selector Type",
-          "options": [
-            {
-              "name": "Product Type",
-              "value": "type"
-            },
-            {
-              "name": "Product Line",
-              "value": "line"
-            },
-            {
-              "name": "Product Category",
-              "value": "category"
-            },
-            {
-              "name": "Brand",
-              "value": "brand"
-            }]
         },
         {
           "component": "text",
           "valueType": "string",
           "name": "value",
           "label": "Selector Value",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "keyword",
+          "label": "Keyword",
           "value": ""
         }
       ]
