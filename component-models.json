@@ -339,7 +339,7 @@
           "component": "aem-content",
           "label": "Fragment Base Folder Path",
           "name": "path",
-          "valueType": "string"
+          "valueType": "string",
           "validation": {
             "rootPath": "/content/experience-fragments/bd-com"
         }
@@ -353,10 +353,10 @@
           "component": "aem-content",
           "label": "Fragment Base Folder Path",
           "name": "path",
-          "valueType": "string"
+          "valueType": "string",
           "validation": {
             "rootPath": "/content/bd-com"
-        }
+          }
         }
     ]
   },
