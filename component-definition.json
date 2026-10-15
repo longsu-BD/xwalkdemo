@@ -308,6 +308,21 @@
             }
           }
         },
+       {
+          "title": "Fragment X",
+          "id": "xfragment",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Fragment X",
+                  "model": "xfragment"
+                }
+              }
+            }
+          }
+        },
         {
           "title": "Hero Spotlight",
           "id": "hero-spotlight",

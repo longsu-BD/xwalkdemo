@@ -335,16 +335,28 @@
   {
     "id": "pdpfragment",
     "fields": [
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
-      },
         {
           "component": "aem-content",
           "label": "Fragment Base Folder Path",
           "name": "path",
           "valueType": "string"
+          "validation": {
+            "rootPath": "/content/experience-fragments/bd-com"
+        }
+        }
+    ]
+  },
+  
+    "id": "xfragment",
+    "fields": [
+        {
+          "component": "aem-content",
+          "label": "Fragment Base Folder Path",
+          "name": "path",
+          "valueType": "string"
+          "validation": {
+            "rootPath": "/content/bd-com"
+        }
         }
     ]
   },
