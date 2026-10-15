@@ -333,6 +333,22 @@
     ]
   },
   {
+    "id": "pdpfragment",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      },
+        {
+          "component": "aem-content",
+          "label": "Fragment Base Folder Path",
+          "name": "path",
+          "valueType": "string"
+        }
+    ]
+  },
+  {
     "id": "hero-spotlight",
     "fields": [
       {
