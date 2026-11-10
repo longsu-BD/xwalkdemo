@@ -415,6 +415,21 @@
               }
             }
           }
+        },
+         {
+          "title": "Raw HTML",
+          "id": "raw-html",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "bdrebrand-aem/components/edshtml",
+                "template": {
+                  "name": "Raw HTML",
+                  "model": "raw-html"
+                }
+              }
+            }
+          }
         }
       ]
     }

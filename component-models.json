@@ -496,5 +496,16 @@
         }
       }
     ]
+  },
+    {
+    "id": "raw-html",
+    "fields": [
+      {
+        "component": "textarea",
+        "name": "html",
+        "label": "Raw HTML(unsafe!)",
+        "valueType": "string"
+      }
+    ]
   }
 ]

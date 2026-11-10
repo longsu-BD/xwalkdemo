@@ -1,0 +1,109 @@
+[
+  {
+    "id": "main",
+    "components": [
+      "section"
+    ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "cards",
+      "columns",
+      "carousel",
+      "marketo-form",
+      "product-info-block",
+      "fragment",
+      "a-to-z-types",
+       "feature-cards",
+      "bd-image-text",
+      "bd-accordions",
+      "bd-product-category",
+      "product-insight-card",
+      "popular-types-card",
+      "product-detail-search",
+      "related-events",
+      "sub-navigation",
+      "brightcove",
+      "listing-page",
+      "bd-breadcrumb",
+      "common-title",
+      "image-swiper",
+      "dynamic-fragment",
+      "callout-text",
+      "call-to-action",
+      "featured-block",
+      "algolia-filters",
+      "featured-tiles"
+    ]
+  },
+  {
+    "id": "bd-product-category",
+    "components": [
+      "bd-product-category"
+    ]
+  },
+  {
+    "id": "bd-page",
+    "components": [
+      "section"
+    ]
+  },
+  {
+    "id": "bd-accordions",
+    "components": [
+      "bd-accordion"
+    ]
+  },
+  {
+    "id": "cards",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "columns",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
+    "id": "related-events",
+    "components": [
+      "related-event"
+    ]
+  },
+  {
+    "id": "feature-cards",
+    "components": [
+      "feature-cards-title",
+      "feature-card"
+    ]
+    },
+    {
+      "id": "sub-navigation",
+      "components": [
+        "sub-nav-item"
+      ]
+    },
+  {
+    "id": "products",
+    "components": [
+      "product"
+    ]
+  }
+] 
